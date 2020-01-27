@@ -6,6 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { PaqueteComponent } from './components/paquete/paquete.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { PaqueteComponent } from './components/paquete/paquete.component';
     HomeComponent,
     NavbarComponent,
     CarruselComponent,
-    PaqueteComponent
+    PaqueteComponent,
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

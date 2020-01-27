@@ -3,6 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 
 
+
+import * as  particlesJS from 'particles.js';
+
+
+
+
+
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,6 +26,10 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.cargarTyped();
     }, 1500);
+
+
+    particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+       console.log('callback - particles.js config loaded'); });
   }
 
   cargarTyped() {
