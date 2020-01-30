@@ -1,9 +1,7 @@
-/*
+        /*
 You can add global styles to this file,
 and also import other style files */
-
-
-/* 
+        /* 
 Skip to content
 Why GitHub? 
 Enterprise
@@ -11,9 +9,7 @@ Explore
 Marketplace
 Pricing 
 Search */
-
-
-/* Sign in
+        /* Sign in
 Sign up
 falconmasters
 /
@@ -27,9 +23,7 @@ particules-js/css/estilos.css
 @falconmasters falconmasters Agregando archivos base
 857e408 on 10 Oct 2019
 124 lines (106 sloc)  2.2 KB */
-
-
-/* 
+        /* 
 ESTILOS GENERALES * {
     margin: 0;
     padding: 0;
@@ -56,9 +50,7 @@ body {
     max-width: 1200px;
     background-size: cover;
     /* background-image: url('../img/bg-header3.jpeg'); */
-
-
-/* 
+        /* 
 background-position: center;
 margin-left: auto;
 margin-right: auto;
@@ -152,9 +144,7 @@ opacity: .85;
         opacity: 0;
     }
 } */
-
-
-/* © 2020 GitHub, Inc.
+        /* © 2020 GitHub, Inc.
 Terms
 Privacy
 Security

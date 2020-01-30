@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 
 
-
 import * as  particlesJS from 'particles.js';
 
+import { NgForm } from '@angular/forms';
+
+import Swal from 'sweetalert2';
 
 
 
@@ -57,4 +59,20 @@ export class HomeComponent implements OnInit {
     });    
   }
 
+  mostrarinfo(form: NgForm){
+    
+    Swal.fire({
+      icon: 'info',
+      title: 'SweetAlert',
+      text: 'Que te parece?',
+      imageUrl: './assets/img/img5.png',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image'
+    })
+
+  }
+
 }
+
+

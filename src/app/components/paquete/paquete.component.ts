@@ -16,19 +16,28 @@ export class PaqueteComponent implements OnInit {
   ngOnInit() {
   }
 
+  // mostrarinfo(form: NgForm){
+    
+  //   Swal.fire({
+  //     icon: 'info',
+  //     title: 'SweetAlert',
+  //     text: 'Que te parece?'
+  //   })
+
+  // }
+
+
+
   mostrarinfo(form: NgForm){
     
-    // Swal.fire({
-    //   title: 'Prueba',
-    //   text: 'Demostracion de SweetAlert',
-    //   icon: 'info',
-    //   allowOutsideClick: false
-    // });
-    // Swal.showLoading();
     Swal.fire({
       icon: 'info',
       title: 'SweetAlert',
-      text: 'Que te parece?'
+      text: 'Que te parece?',
+      imageUrl: './assets/img/img5.png',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image'
     })
 
   }
