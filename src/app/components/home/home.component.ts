@@ -38,10 +38,10 @@ export class HomeComponent implements OnInit {
     
     var typed = new Typed('.typed', {
       strings: [
-          '<i class="mascota">Gato</i>',
-          '<i class="mascota">Perro</i>',
-          '<i class="mascota">Conejo</i>',
-          '<i class="mascota">Pez</i>',
+          '<i class="mascota">Páginas Web</i>',
+          '<i class="mascota">Aplicaciónes móviles</i>',
+          '<i class="mascota">Renovación estética</i>',
+          '<i class="mascota">innovación</i>',
       ],
       // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
       typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
