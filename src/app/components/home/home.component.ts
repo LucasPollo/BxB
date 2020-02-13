@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 import Typed from 'typed.js';
 
@@ -21,7 +21,7 @@ declare var particlesJS: any;
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor( public renderer: Renderer2) { }
 
   ngOnInit() {
 
@@ -71,6 +71,27 @@ export class HomeComponent implements OnInit {
       imageAlt: 'Custom image'
     })
 
+  }
+
+
+  fadeInRight({ target, visible }: { target: Element; visible: boolean }): void {
+
+    if (visible)
+      target.classList.add('fadeInRight')
+    else
+      target.classList.remove('fadeInRight');
+
+  }
+
+
+  fadeInLeft({ target, visible }: { target: Element; visible: boolean }): void {
+    //console.log(target);
+    // this.renderer.addClass(target, visible ? 'fadeInLeft' : '');
+    // this.renderer.removeClass(target, visible ? '' : 'fadeInLeft');
+    if (visible)
+      target.classList.add('fadeInLeft')
+    else
+      target.classList.remove('fadeInLeft');    
   }
 
 }

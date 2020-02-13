@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
 
@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class PaqueteComponent implements OnInit {
 
-  constructor() { }
+  constructor( private renderer: Renderer2) { }
 
   ngOnInit() {
   }
@@ -41,5 +41,11 @@ export class PaqueteComponent implements OnInit {
     })
 
   }
+
+
+  public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
+    this.renderer.addClass(target, visible ? 'active' : 'inactive');
+    this.renderer.removeClass(target, visible ? 'inactive' : 'active');
+}
 
 }

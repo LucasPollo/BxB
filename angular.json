@@ -23,6 +23,7 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "src/assets/animate.css",
                             "src/styles.css"
                         ],
                         "scripts": ["node_modules/particles.js/particles.js"],
