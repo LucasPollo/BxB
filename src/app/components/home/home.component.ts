@@ -8,6 +8,7 @@ import * as  particlesJS from 'particles.js';
 import { NgForm } from '@angular/forms';
 
 import Swal from 'sweetalert2';
+import { ParticlesConfig } from 'src/assets/js/particles-config';
 
 
 
@@ -27,21 +28,29 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.cargarTyped();
+      this.invokeParticles();
     }, 1500);
 
 
-    particlesJS.load('particles-js', 'assets/js/particles.json', function() {
-       console.log('callback - particles.js config loaded'); });
+
   }
 
+
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
+  }
+
+
+
+
   cargarTyped() {
-    
-    var typed = new Typed('.typed', {
+
+    let typed = new Typed('.typed', {
       strings: [
-          '<i class="mascota">Gato</i>',
-          '<i class="mascota">Perro</i>',
-          '<i class="mascota">Conejo</i>',
-          '<i class="mascota">Pez</i>',
+          '<i class="mascota text-info">Modernas</i>',
+          '<i class="mascota text-info">Exitosas</i>',
+          '<i class="mascota text-info">Innovadoras</i>',
+          '<i class="mascota text-info">Únicas</i>',
       ],
       // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
       typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,

@@ -4,6 +4,11 @@ import { NgForm } from '@angular/forms';
 
 import Swal from 'sweetalert2';
 
+import { ParticlesConfig } from 'src/assets/js/particles-config';
+
+
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-paquete',
   templateUrl: './paquete.component.html',
@@ -14,17 +19,15 @@ export class PaqueteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.invokeParticles();
+
+
   }
 
-  // mostrarinfo(form: NgForm){
-    
-  //   Swal.fire({
-  //     icon: 'info',
-  //     title: 'SweetAlert',
-  //     text: 'Que te parece?'
-  //   })
 
-  // }
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
+  }
 
 
 
