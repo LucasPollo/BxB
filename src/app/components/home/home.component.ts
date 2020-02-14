@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 import Typed from 'typed.js';
 
@@ -22,7 +22,7 @@ declare var particlesJS: any;
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor( public renderer: Renderer2) { }
 
   ngOnInit() {
 
@@ -47,10 +47,17 @@ export class HomeComponent implements OnInit {
 
     let typed = new Typed('.typed', {
       strings: [
+<<<<<<< HEAD
           '<i class="mascota text-info">Modernas</i>',
           '<i class="mascota text-info">Exitosas</i>',
           '<i class="mascota text-info">Innovadoras</i>',
           '<i class="mascota text-info">Únicas</i>',
+=======
+          '<i class="mascota">Páginas Web</i>',
+          '<i class="mascota">Aplicaciónes móviles</i>',
+          '<i class="mascota">Renovación estética</i>',
+          '<i class="mascota">innovación</i>',
+>>>>>>> d2b63fe01b9b2d416fadbbb84774cabc8fa3d146
       ],
       // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
       typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
@@ -80,6 +87,27 @@ export class HomeComponent implements OnInit {
       imageAlt: 'Custom image'
     })
 
+  }
+
+
+  fadeInRight({ target, visible }: { target: Element; visible: boolean }): void {
+
+    if (visible)
+      target.classList.add('fadeInRight')
+    else
+      target.classList.remove('fadeInRight');
+
+  }
+
+
+  fadeInLeft({ target, visible }: { target: Element; visible: boolean }): void {
+    //console.log(target);
+    // this.renderer.addClass(target, visible ? 'fadeInLeft' : '');
+    // this.renderer.removeClass(target, visible ? '' : 'fadeInLeft');
+    if (visible)
+      target.classList.add('fadeInLeft')
+    else
+      target.classList.remove('fadeInLeft');    
   }
 
 }

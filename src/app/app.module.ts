@@ -9,6 +9,8 @@ import { PaqueteComponent } from './components/paquete/paquete.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { InViewportModule } from 'ng-in-viewport';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

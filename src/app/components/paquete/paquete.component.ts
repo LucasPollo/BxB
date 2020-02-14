@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
 
@@ -16,7 +16,7 @@ declare var particlesJS: any;
 })
 export class PaqueteComponent implements OnInit {
 
-  constructor() { }
+  constructor( private renderer: Renderer2) { }
 
   ngOnInit() {
     this.invokeParticles();
@@ -44,5 +44,11 @@ export class PaqueteComponent implements OnInit {
     })
 
   }
+
+
+  public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
+    this.renderer.addClass(target, visible ? 'active' : 'inactive');
+    this.renderer.removeClass(target, visible ? 'inactive' : 'active');
+}
 
 }
