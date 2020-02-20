@@ -10,6 +10,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { InViewportModule } from 'ng-in-viewport';
+import { QuienessomosComponent } from './components/quienessomos/quienessomos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InViewportModule } from 'ng-in-viewport';
     CarruselComponent,
     PaqueteComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    QuienessomosComponent
   ],
   imports: [
     BrowserModule,

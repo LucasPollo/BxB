@@ -1,36 +1,100 @@
 <div class="container-fluid">
     <div class="container py-5">
         <div class="row">
-            <!-- Precios1-->
-            <div class="col-md-4 py-3">
-                <div class="card shadow-lg text-center"
-                inViewport
-                [inViewportOptions]="{ threshold: 0.0001 }"
-                (inViewportAction)="onIntersection($event)">
 
+
+            <div class="col-md-4 py-3">
+                <div class="card text-center border-primary bg-light">
                     <div class="card-body">
-                        <div class="row text-right">
-                            <div class="col">
-                                <button class="btn btn-info" (click)="mostrarinfo()">
-                                    <i class="fa fa-info-circle"></i>
-                                </button>
-                            </div>
-                        </div>
                         <div class="py-3">
-                            <span class="h1">$</span><span class="display-1 align-middle">10000</span>
+                            <span class="h1">$</span><span class="display-1 align-middle">1000</span>
                         </div>
-                        <p class="h1">Básico</p>
-                        <h5 class="card-title py-2"><b>Lorem Ipsum.</b></h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nisi illum, soluta sint unde eaque quia delectus assumenda, similique sequi!</p>
+                        <hr>
+                        <p class="h1">Basico</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 1</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 2</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 3</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 4</p>
+
                     </div>
-                    <a href="#" class="card-footer btn bg-primary text-white">Contratar</a>
+                    <a href="#" class="card-footer btn bg-main text-white">Contratar</a>
                 </div>
             </div>
-            <!-- Precios1 -->
 
-            <!-- Precios2 -->
+
+
             <div class="col-md-4 py-3">
-                <div class="card text-center">
+                <div class="card text-center border-primary bg-light">
+                    <div class="card-body">
+                        <div class="py-3">
+                            <span class="h1">$</span><span class="display-1 align-middle">1500</span>
+                        </div>
+                        <hr>
+                        <p class="h1">Avanzado</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 1</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 2</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 3</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 4</p>
+
+                    </div>
+                    <a href="#" class="card-footer btn bg-main text-white">Contratar</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 py-3">
+                <div class="card text-center border-primary bg-light">
+                    <div class="card-body">
+                        <div class="py-3">
+                            <span class="h1">$</span><span class="display-1 align-middle">2000</span>
+                        </div>
+                        <hr>
+                        <p class="h1">Profesional</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 1</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 2</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 3</p>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-check text-primary"></i> Beneficio 4</p>
+
+                    </div>
+                    <a href="#" class="card-footer btn bg-main text-white">Contratar</a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container">
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-4 py-3 box">
+                <div class="card text-center imgBx">
                     <div class="card-body">
                         <div class="py-3">
                             <span class="h1">$</span><span class="display-1 align-middle">1500</span>
@@ -42,13 +106,27 @@
                     <a href="#" class="card-footer btn bg-primary text-white">Contratar</a>
                 </div>
             </div>
-            <!-- Precios2 -->
 
-            <!-- Precios3 -->
+
+            <div class="col-md-4 py-3 bg-white">
+                <div class="card text-center box">
+                    <div class="card-body imgBx">
+                        <div class="py-3">
+                            <span class="h1">$</span><span class="display-1 align-middle">1500</span>
+                        </div>
+                        <p class="h1">Avanzado</p>
+                        <h5 class="card-title py-2"><b>Lorem Ipsum.</b></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nisi illum, soluta sint unde eaque quia delectus assumenda, similique sequi!</p>
+                    </div>
+                    <a href="#" class="card-footer btn">Ver mas</a>
+                </div>
+            </div>
+
+
             <div class="col-md-4 py-3">
                 <div class="card text-center">
-                    <div class="card-body">
-                        <div class="py-3">
+                    <div class="card-body box">
+                        <div class="py-3 imgbx">
                             <span class="h1">$</span><span class="display-1 align-middle">2000</span>
                         </div>
                         <p class="h1">Profesional</p>
@@ -58,7 +136,55 @@
                     <a href="#" class="card-footer btn bg-primary text-white">Contratar</a>
                 </div>
             </div>
-            <!-- Precios3 -->
+
         </div>
     </div>
-</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="container">
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./assets/img/Tarjeta1.jpg">
+        </div>
+        <div class="content">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./assets/img/Tarjeta2.jpg">
+        </div>
+        <div class="content">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="./assets/img/Tarjeta3.jpg">
+        </div>
+        <div class="content">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+</div> -->

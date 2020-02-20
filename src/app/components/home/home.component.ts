@@ -13,6 +13,7 @@ import { ParticlesConfig } from 'src/assets/js/particles-config';
 
 
 
+
 declare var particlesJS: any;
 
 @Component({
@@ -47,17 +48,10 @@ export class HomeComponent implements OnInit {
 
     let typed = new Typed('.typed', {
       strings: [
-<<<<<<< HEAD
-          '<i class="mascota text-info">Modernas</i>',
-          '<i class="mascota text-info">Exitosas</i>',
-          '<i class="mascota text-info">Innovadoras</i>',
-          '<i class="mascota text-info">Únicas</i>',
-=======
           '<i class="mascota">Páginas Web</i>',
           '<i class="mascota">Aplicaciónes móviles</i>',
           '<i class="mascota">Renovación estética</i>',
           '<i class="mascota">innovación</i>',
->>>>>>> d2b63fe01b9b2d416fadbbb84774cabc8fa3d146
       ],
       // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
       typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
@@ -71,12 +65,12 @@ export class HomeComponent implements OnInit {
       showCursor: true, // Mostrar cursor palpitanto
       cursorChar: '|', // Caracter para el cursor
       contentType: 'html', // 'html' o 'null' para texto sin formato
-  
-    });    
+
+    });
   }
 
-  mostrarinfo(form: NgForm){
-    
+  mostrarinfo(form: NgForm) {
+
     Swal.fire({
       icon: 'info',
       title: 'SweetAlert',
