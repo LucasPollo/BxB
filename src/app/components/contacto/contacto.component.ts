@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
+import { NgForm } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-contacto',
@@ -11,5 +15,8 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+
 
 }
