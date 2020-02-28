@@ -31,18 +31,57 @@ export class PaqueteComponent implements OnInit {
 
 
 
-  mostrarinfo(form: NgForm){
-    
+  paquete1(form: NgForm){
     Swal.fire({
+      title: 'Contratar servicio via WhatsApp',
       icon: 'info',
-      title: 'SweetAlert',
-      text: 'Que te parece?',
-      imageUrl: './assets/img/img5.png',
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: 'Custom image'
-    })
+      text: '¿Deseas enviar un mensaje al numero +542235216323 para adquirir este paquete?',
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: true,
+      cancelButtonText:
+      'En otro momento',
+      cancelButtonAriaLabel: 'Thumbs down',
+      confirmButtonText:
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+b%c3%a1sico+que+ustedes+ofrecen!">Me encantaría!</a>',
+      confirmButtonAriaLabel: 'Thumbs up, great!'
+    });
+  }
 
+  
+  paquete2(form: NgForm){
+    Swal.fire({
+      title: 'Contratar servicio via WhatsApp',
+      icon: 'info',
+      text: '¿Deseas enviar un mensaje al numero +542235216323 para adquirir este paquete?',
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: true,
+      cancelButtonText:
+      'En otro momento',
+      cancelButtonAriaLabel: 'Thumbs down',
+      confirmButtonText:
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+avanzado+que+ustedes+ofrecen!">Me encantaría!</a>',
+      confirmButtonAriaLabel: 'Thumbs up, great!'
+    });
+  }
+
+
+  paquete3(form: NgForm){
+    Swal.fire({
+      title: 'Contratar servicio via WhatsApp',
+      icon: 'info',
+      text: '¿Deseas enviar un mensaje al numero +542235216323 para adquirir este paquete?',
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: true,
+      cancelButtonText:
+      'En otro momento',
+      cancelButtonAriaLabel: 'Thumbs down',
+      confirmButtonText:
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+profesional+que+ustedes+ofrecen!">Me encantaría!</a>',
+      confirmButtonAriaLabel: 'Thumbs up, great!'
+    });
   }
 
 

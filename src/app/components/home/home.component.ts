@@ -79,7 +79,7 @@ export class HomeComponent implements OnInit {
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: 'Custom image'
-    })
+    });
 
   }
 
@@ -101,7 +101,7 @@ export class HomeComponent implements OnInit {
     if (visible)
       target.classList.add('fadeInLeft')
     else
-      target.classList.remove('fadeInLeft');    
+      target.classList.remove('fadeInLeft');
   }
 
 }

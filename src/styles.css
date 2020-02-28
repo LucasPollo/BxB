@@ -1,48 +1,18 @@
-        /*
-You can add global styles to this file,
-and also import other style files */
-        /* 
-Skip to content
-Why GitHub? 
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search */
-        /* Sign in
-Sign up
-falconmasters
-/
-particules-js
-140
- Code Issues 0 Pull requests 0 Projects 0 Security Insights
-Join GitHub today
-GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.
-
-particules-js/css/estilos.css
-@falconmasters falconmasters Agregando archivos base
-857e408 on 10 Oct 2019
-124 lines (106 sloc)  2.2 KB */
-        /* 
-ESTILOS GENERALES * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.card:hover {
+    -webkit-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
-body {
-    background-color: #000;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+.resaltar:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-#particles-js {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
+.bg-main {
+    background-color: #6C63FF;
 }
 
 .contenedor {
@@ -157,7 +127,7 @@ Training
 Blog
 About
 */
-   
+}
 html, body {
 font-family: 'Roboto', ;
 font-family: 'Righteous', ;
@@ -182,3 +152,7 @@ font-family: 'Fredoka One', ;
         .text-main {
             color: 6C63FF;
         }
+.text-main {
+    color: #6C63FF;
+    font-family: 'Montserrat', sans-serif;
+}
