@@ -31,7 +31,7 @@ export class PaqueteComponent implements OnInit {
 
 
 
-  paquete1(form: NgForm){
+  paquete1(form?: NgForm){
     Swal.fire({
       title: 'Contratar servicio via WhatsApp',
       icon: 'info',
@@ -49,7 +49,7 @@ export class PaqueteComponent implements OnInit {
   }
 
   
-  paquete2(form: NgForm){
+  paquete2(form?: NgForm){
     Swal.fire({
       title: 'Contratar servicio via WhatsApp',
       icon: 'info',
@@ -67,7 +67,7 @@ export class PaqueteComponent implements OnInit {
   }
 
 
-  paquete3(form: NgForm){
+  paquete3(form?: NgForm){
     Swal.fire({
       title: 'Contratar servicio via WhatsApp',
       icon: 'info',
