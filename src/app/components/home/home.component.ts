@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
     let typed = new Typed('.typed', {
       strings: [
           '<i class="mascota">Páginas Web</i>',
-          '<i class="mascota">Aplicaciónes móviles</i>',
+          '<i class="mascota">Aplicaciones móviles</i>',
           '<i class="mascota">Renovación estética</i>',
           '<i class="mascota">innovación</i>',
       ],
@@ -84,24 +84,20 @@ export class HomeComponent implements OnInit {
   }
 
 
-  fadeInRight({ target, visible }: { target: Element; visible: boolean }): void {
+  /**
+   * Name: FadeIn. Agrega animación cuando el elemento es visible en el viewport
+   * @param param0 evento que permite determinar si el elemento es visible o no
+   * @param fadeIn animación que se agregará al elemento
+   */
+  fadeIn({ target, visible }: { target: Element; visible: boolean} , fadeIn:string): void {
 
-    if (visible)
-      target.classList.add('fadeInRight')
-    else
-      target.classList.remove('fadeInRight');
+    // si es visible y aun no ha agregado la clase de la animacion, se la agrego
+    if (visible && (target.className.indexOf(fadeIn) === -1 ) ) {
 
-  }
+      target.classList.add(fadeIn);
 
+    }
 
-  fadeInLeft({ target, visible }: { target: Element; visible: boolean }): void {
-    //console.log(target);
-    // this.renderer.addClass(target, visible ? 'fadeInLeft' : '');
-    // this.renderer.removeClass(target, visible ? '' : 'fadeInLeft');
-    if (visible)
-      target.classList.add('fadeInLeft')
-    else
-      target.classList.remove('fadeInLeft');
   }
 
 }

@@ -1,55 +1,74 @@
-<div class="jumbotron jumbotron-fluid bg-light animated fadeIn slow">
+<div id="header" class="jumbotron jumbotron-fluid bg-light animated fadeIn slow">
     <div class="container">
-        <h1 class="display-4">Bit x Bit</h1>
-        <p class="lead">Te ayudamos a implementar tus ideas paso a paso.</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-4" style="font-weight: 650;">Bit x Bit</h1>
+                <p class="lead">Te ayudamos a implementar tus ideas paso a paso.</p>
 
-        <h2 class="title">Tus ideas convertidas <br>en <span class="typed"></span> </h2>
-
-
-
+                <h2 class="title">Tus ideas convertidas <br> en <span class="typed"></span> </h2>
+            </div>
+            <div class="col-lg-6">
+                <img src="./assets/img/imghome.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="./assets/img/imgteamwork.png" class="img-fluid">
+            </div>
+        </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,64C96,64,192,64,288,69.3C384,75,480,85,576,101.3C672,117,768,139,864,144C960,149,1056,139,1152,128C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
 </div>
+
 
 
 <div class="container" style="background-color: white;">
 
-    <div class="row mb-4">
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInLeft($event)">
 
+
+    <div class="row mb-4">
+        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
             <span class="text-right">
-                Estamos listos para ayudarte a transformar tus ideas en un bello y funcional sistema informatico que pueda alcanzar e incluso superar tus expectativas para que puedas llevar a cabo todos tus proyectos.
+                <h2>Elegante y moderno</h2>
                 
+                Queremos que esa idea en tu mente se pueda materializar de la forma mas elegante posible y con un estilo moderno que todo el mundo ame.
             </span>
         </div>
-        <div class="col-md-6 animated " inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInRight($event)">
-
-            <img src="./assets/img/img1.png" class="img-fluid">
+        <div class="col-md-6 animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
+            <img src="./assets/img/img8.png" class="img-fluid">
         </div>
     </div>
 
-
     <div class="row mb-4">
 
-        <div class="col-md-6 animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInLeft($event)">
+        <div class="col-md-6 animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
 
             <img src="./assets/img/img6.png" class="img-fluid">
         </div>
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInRight($event)">
+        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
 
             <span class="align-middle">
+                <h2>Resultados asegurados</h2>
+                
                 Con BxB tendras la garantía de que podras tener resultados positivos en todos los proyectos que desees dejar en nuestras manos. Tus ideas son nuestro tesoro, y queremos hacerlo brillar.
             </span>
         </div>
     </div>
 
     <div class="row mb-4">
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInLeft($event)">
+        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
+
             <span class="text-right">
-                Queremos que esa idea no solo este en tu mente, sino que pueda llegar a cualquier persona y en cualquier dispositivo electronico.
+                <h2>Diseño adaptable</h2>
+                                                                                    
+                Con nosotros tienes la confianza de que tus ideas puedan ser vistas por cualquier persona en cualquier dispositivo electronico.                                                                       
             </span>
         </div>
-        <div class="col-md-6 animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeInRight($event)">
-            <img src="./assets/img/img3.png" class="img-fluid">
+        <div class="col-md-6 animated " inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
+
+            <img src="./assets/img/img2.png" class="img-fluid">
         </div>
     </div>
+
 </div>
