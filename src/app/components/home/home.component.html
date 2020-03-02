@@ -1,9 +1,23 @@
-<div id="header" class="jumbotron jumbotron-fluid bg-light animated fadeIn slow">
+<div id="header" class="jumbotron jumbotron-fluid bg-light text-white animated fadeIn slow">
     <div class="container">
-        <h1 class="display-4">Bit x Bit</h1>
-        <p class="lead">Te ayudamos a implementar tus ideas paso a paso.</p>
 
-        <h2 class="title">Tus ideas convertidas <br>en <span class="typed"></span> </h2>
+        <div class="row">
+
+            <div class="col-lg-6 mt-4 text-lg-left text-center">
+
+                <!-- <h1 class="display-4" style="font-weight: 800;">Bit x Bit</h1> -->
+                <p class="display-4 mt-4 pt-4">Diseño de <br> aplicaciones WEB</p>
+                <p class="h3 font-italic mt-4">Te ayudamos a implementar tus ideas paso a paso.</p>
+        
+                <!-- <h2 class="title">Tus ideas convertidas <br>en <span class="typed"></span> </h2> -->
+            </div>
+
+            <div class="col-lg-6 mt-4 jumbotron-row-img" >
+                    
+                    <img class="jumbotron-img" src="./assets/img/undraw_web_devices_ad58.svg" alt="" height="300">
+               
+            </div>
+        </div>
 
 
 
@@ -11,7 +25,7 @@
 </div>
 
 
-<div class="container" style="background-color: white;">
+<div class="container mt-4" style="background-color: white;">
 
     <div class="row mb-4">
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
@@ -30,7 +44,7 @@
     </div>
 
 
-    <div class="row mb-4">
+    <div class="row my-4">
 
         <div class="col-md-6 animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
 
@@ -46,7 +60,7 @@
         </div>
     </div>
 
-    <div class="row mb-4">
+    <div class="row my-4">
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
             <span class="text-right">
                 <h2>Elegante y moderno</h2>
