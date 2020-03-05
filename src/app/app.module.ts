@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { InViewportModule } from 'ng-in-viewport';
 import { QuienessomosComponent } from './components/quienessomos/quienessomos.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { QuienessomosComponent } from './components/quienessomos/quienessomos.co
     PaqueteComponent,
     ContactoComponent,
     FooterComponent,
-    QuienessomosComponent
+    QuienessomosComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -5,30 +5,3 @@
 }
 
 
-#header {
-
-    background: rgb(108,99,255);
-    background: linear-gradient(152deg, rgba(108,99,255,1) 46%, rgba(245,0,87,1) 100%);
-}
-
-
-.jumbotron-img {
-
-    width: 100%;
-}
-
-@media (min-width: 992px) {
-
-    .jumbotron-row-img {
-
-        position: absolute;
-        bottom: 80px;
-        right: 40px;
-    }
-
-    .jumbotron-img {
-        width: none;
-    }
-    
-}
-

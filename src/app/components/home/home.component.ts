@@ -23,6 +23,8 @@ declare var particlesJS: any;
 })
 export class HomeComponent implements OnInit {
 
+  height: number;
+
   constructor( public renderer: Renderer2) { }
 
   ngOnInit() {
@@ -32,6 +34,12 @@ export class HomeComponent implements OnInit {
       this.invokeParticles();
     }, 1500);
 
+
+    console.log('Alto:', window.innerHeight);
+    console.log('Alto2:', window.outerHeight);
+    console.log(this.height);
+    this.height =  window.innerHeight - 85;
+    
 
   }
 
