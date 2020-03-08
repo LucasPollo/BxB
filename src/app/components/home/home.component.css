@@ -5,3 +5,10 @@
 }
 
 
+h1, .card-title {
+    color: var( --color-primary );
+}
+
+p {
+    color: rgba(58, 54, 109, 0.83)
+}
