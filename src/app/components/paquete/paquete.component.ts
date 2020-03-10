@@ -43,7 +43,7 @@ export class PaqueteComponent implements OnInit {
       'En otro momento',
       cancelButtonAriaLabel: 'Thumbs down',
       confirmButtonText:
-      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+b%c3%a1sico+que+ustedes+ofrecen!">Me encantaría!</a>',
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+landing+page+que+ustedes+ofrecen!">Me encantaría!</a>',
       confirmButtonAriaLabel: 'Thumbs up, great!'
     });
   }
@@ -61,7 +61,7 @@ export class PaqueteComponent implements OnInit {
       'En otro momento',
       cancelButtonAriaLabel: 'Thumbs down',
       confirmButtonText:
-      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+avanzado+que+ustedes+ofrecen!">Me encantaría!</a>',
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+personal+web+que+ustedes+ofrecen!">Me encantaría!</a>',
       confirmButtonAriaLabel: 'Thumbs up, great!'
     });
   }
@@ -79,7 +79,7 @@ export class PaqueteComponent implements OnInit {
       'En otro momento',
       cancelButtonAriaLabel: 'Thumbs down',
       confirmButtonText:
-      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+profesional+que+ustedes+ofrecen!">Me encantaría!</a>',
+      '<a class="text-white" href="https://api.whatsapp.com/send?phone=+542235216323&text=Hola!%0d%0aMe+gustaria+adquirir+el+paquete+eCommerce+que+ustedes+ofrecen!">Me encantaría!</a>',
       confirmButtonAriaLabel: 'Thumbs up, great!'
     });
   }
