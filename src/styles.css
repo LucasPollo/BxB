@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+
+    --color-primary: rgb(108,99,255);
+}
+
+
 .card:hover {
     -webkit-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
@@ -20,7 +27,7 @@
     max-width: 1200px;
     background-size: cover;
     /* background-image: url('../img/bg-header3.jpeg'); */
-    /* 
+        /* 
 background-position: center;
 margin-left: auto;
 margin-right: auto;
@@ -114,7 +121,7 @@ opacity: .85;
         opacity: 0;
     }
 } */
-    /* © 2020 GitHub, Inc.
+        /* © 2020 GitHub, Inc.
 Terms
 Privacy
 Security
@@ -128,9 +135,7 @@ Blog
 About
 */
 }
-
-html,
-body {
+html, body {
     height: 100%;
     font-family: 'Roboto', ;
     font-family: 'Righteous', ;
@@ -138,43 +143,27 @@ body {
 }
 
 .jumbotron {
-    height: 98%;
+    height: 100%;    
 }
-
-.full {
-    height: 100%;
-}
-
-.curved-div {
-    background: #ff3c00;
-    color: #FFF;
-    text-align: center;
-}
-
-.curved-div svg {
-    display: block;
-}
-
-.card:hover {
-    -webkit-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
-}
-
-.resaltar:hover {
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-}
-
-.bg-main {
-    background-color: #6C63FF;
-}
-
-.text-main {
-    color: 6C63FF;
-}
-
+        .card:hover {
+            -webkit-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 13px 22px -4px rgba(0, 0, 0, 0.75);
+        }
+        
+        .resaltar:hover {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        }
+        
+        .bg-main {
+            background-color: #6C63FF;
+        }
+        
+        .text-main {
+            color: 6C63FF;
+        }
 .text-main {
     color: #6C63FF;
     font-family: 'Montserrat', sans-serif;

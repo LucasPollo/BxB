@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Element } from '@angular/compiler';
+// import { Element } from '@angular/compiler';
 
 @Component({
   selector: 'app-navbar',
@@ -8,9 +8,20 @@ import { Element } from '@angular/compiler';
 })
 export class NavbarComponent implements OnInit {
 
+  scrollOn: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+
+    window.onscroll = ( event: any) => {
+
+      this.scrollOn = event.srcElement.documentElement.scrollTop > 10 ? true : false;
+
+      console.log(this.scrollOn);
+      
+
+    }
   }
 
 
