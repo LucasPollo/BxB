@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
 
 import Swal from 'sweetalert2';
 import { ParticlesConfig } from 'src/assets/js/particles-config';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 
 
@@ -25,7 +27,10 @@ export class HomeComponent implements OnInit {
 
   height: number;
 
-  constructor( public renderer: Renderer2) { }
+  isSmall: boolean = true;
+
+  constructor( public renderer: Renderer2,
+                private _breakpoint: BreakpointService) { }
 
   ngOnInit() {
 
@@ -35,11 +40,22 @@ export class HomeComponent implements OnInit {
     }, 1500);
 
 
+<<<<<<< HEAD
+=======
+
+
+    this._breakpoint.isSmall().subscribe( state => this.isSmall = state );
+    
+>>>>>>> f3e3639fae8422bfcaeda0bab876e35068d5235b
     console.log('Alto:', window.innerHeight);
     console.log('Alto2:', window.outerHeight);
     console.log(this.height);
     this.height =  window.innerHeight - 85;
+<<<<<<< HEAD
     
+=======
+  
+>>>>>>> f3e3639fae8422bfcaeda0bab876e35068d5235b
 
   }
 

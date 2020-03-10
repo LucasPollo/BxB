@@ -1,21 +1,102 @@
-
-
-
 <div class="container" style="background-color: white;">
 
+
+
+    <ng-container *ngIf="isSmall; then small; else large">
+
+    </ng-container>
+</div>
+
+
+<ng-template #small>
+    <div class="row" [style.height.px]='height'>
+
+        <div class="col-12 text-vertical-center ">
+
+
+            <div class="card border-0">
+
+                <img src="./assets/img/img8.png" class="card-img-top img-fluid">
+
+                <div class="card-body">
+                    <h2 class="card-title text-center">Elegante y moderno</h2>
+
+                    <p class="card-text">
+                        Queremos que esa idea en tu mente se pueda materializar de la forma mas elegante posible y con un estilo moderno que todo el mundo ame.
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" [style.height.px]='height'>
+
+        <div class="col-12 text-vertical-center animated">
+
+            <div class="card border-0">
+
+                <img src="./assets/img/img6.png" class="card-img-top img-fluid">
+
+                <div class="card-body">
+                    <h2 class="card-title text-center">Resultados asegurados</h2>
+
+                    <p class="card-text">
+                        Con BxB tendras la garantía de que podras tener resultados positivos en todos los proyectos que desees dejar en nuestras manos. Tus ideas son nuestro tesoro, y queremos hacerlo brillar.
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" [style.height.px]='height'>
+        <div class="col-12 text-vertical-center animated">
+
+            <div class="card border-0">
+
+                <img src="./assets/img/img9.png" class="card-img-top img-fluid">
+
+                <div class="card-body">
+                    <h2 class="card-title text-center">Diseño adaptable</h2>
+
+                    <p class="card-text">
+                        Con nosotros tienes la confianza de que tus ideas puedan ser vistas por cualquier persona en cualquier dispositivo electronico.
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</ng-template>
+
+
+<ng-template #large>
     <div class="row" [style.height.px]='height'>
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
 
             <span class="text-right">
-                <h2>Diseño adaptable</h2>
+                <h1>Elegante y moderno</h1>
                 
-                Estamos listos para ayudarte a transformar tus ideas en un bello y funcional sistema informatico que pueda alcanzar e incluso superar tus expectativas para que puedas llevar a cabo todos tus proyectos.
+                <p style="font-size: 1.12rem">
+                    Queremos que esa idea en tu mente se pueda materializar 
+                    de la forma mas elegante posible y con un estilo moderno que todo el mundo ame.
+
+                </p>
                 
             </span>
         </div>
         <div class="col-md-6 text-vertical-center animated " inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
 
-            <img src="./assets/img/img1.png" class="img-fluid">
+            <img src="./assets/img/img8.png" class="img-fluid">
         </div>
     </div>
 
@@ -29,9 +110,13 @@
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
 
             <span class="align-middle">
-                <h2>Pixel perfect</h2>
-                                
-                Con BxB tendras la garantía de que podras tener resultados positivos en todos los proyectos que desees dejar en nuestras manos. Tus ideas son nuestro tesoro, y queremos hacerlo brillar.
+                <h1>Resultados asegurados</h1>
+                              
+                <p style="font-size: 1.12rem">
+                    Con BxB tendras la garantía de que podras tener resultados positivos en 
+                    todos los proyectos que desees dejar en nuestras manos. 
+                    Tus ideas son nuestro tesoro, y queremos hacerlo brillar.                
+                </p>
             </span>
         </div>
     </div>
@@ -39,13 +124,19 @@
     <div class="row" [style.height.px]='height'>
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
             <span class="text-right">
-                <h2>Elegante y moderno</h2>
+                <h1>Diseño adaptable</h1>
                 
-                Queremos que esa idea no solo este en tu mente, sino que pueda llegar a cualquier persona y en cualquier dispositivo electronico.
+                <p class="mt-2" style="font-size: 1.12rem">
+                    Con nosotros tienes la confianza de que tus ideas puedan ser vistas por cualquier persona en cualquier dispositivo electronico.                                                                       
+                </p>
             </span>
         </div>
         <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
+<<<<<<< HEAD
             <img src="./assets/img/img3.png" class="img-fluid">
+=======
+            <img src="./assets/img/img9.png" class="img-fluid">
+>>>>>>> f3e3639fae8422bfcaeda0bab876e35068d5235b
         </div>
     </div>
-</div>
+</ng-template>
