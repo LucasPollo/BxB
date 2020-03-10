@@ -29,7 +29,7 @@ export class NavbarComponent implements OnInit {
 
     let element: HTMLElement = document.getElementById( elementId );
 
-    element.scrollIntoView({block: "end", behavior: "smooth"});
+    element.scrollIntoView({block: "start", behavior: "smooth"});
   }
 
 }
