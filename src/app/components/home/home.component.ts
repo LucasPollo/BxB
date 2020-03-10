@@ -40,22 +40,15 @@ export class HomeComponent implements OnInit {
     }, 1500);
 
 
-<<<<<<< HEAD
-=======
 
 
     this._breakpoint.isSmall().subscribe( state => this.isSmall = state );
     
->>>>>>> f3e3639fae8422bfcaeda0bab876e35068d5235b
     console.log('Alto:', window.innerHeight);
     console.log('Alto2:', window.outerHeight);
     console.log(this.height);
     this.height =  window.innerHeight - 85;
-<<<<<<< HEAD
-    
-=======
   
->>>>>>> f3e3639fae8422bfcaeda0bab876e35068d5235b
 
   }
 
