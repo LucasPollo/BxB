@@ -173,6 +173,11 @@ html, body {
     color: rgba(58, 54, 109, 0.83)
 }
 
+.text-vertical-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media (min-width: 992px) {
