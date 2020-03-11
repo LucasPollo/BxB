@@ -11,9 +11,12 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactoComponent implements OnInit {
 
+  height: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.height =  window.innerHeight - 85;
   }
 
 

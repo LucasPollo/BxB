@@ -1,14 +1,8 @@
-.text-vertical-center {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 h1, .card-title {
     color: var( --color-primary );
 }
 
-p {
-    color: rgba(58, 54, 109, 0.83)
-}
+
