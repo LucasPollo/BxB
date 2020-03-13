@@ -1,4 +1,5 @@
-<div id="header" class="jumbotron jumbotron-fluid bg-light text-white animated fadeIn slow">
+<div id="header" inViewport [inViewportOptions]="{ threshold: 1 }" (inViewportAction)="_menu.setActive(1, $event)"
+      class="jumbotron jumbotron-fluid bg-light text-white animated fadeIn slow">
   <div class="container">
 
       <div class="row">

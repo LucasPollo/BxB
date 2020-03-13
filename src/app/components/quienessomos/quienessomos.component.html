@@ -1,4 +1,4 @@
-<br id="aboutus">
+<br id="aboutus" inViewport [inViewportOptions]="{ threshold: 1 }" (inViewportAction)="_menu.setActive(3, $event)">
 <br>
 <br>
 <h1 class="display-4 text-main text-center py-5">¿Quiénes somos?</h1>

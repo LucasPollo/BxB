@@ -5,6 +5,7 @@ import { NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 
 import { ParticlesConfig } from 'src/assets/js/particles-config';
+import { MenuService } from 'src/app/services/menu.service';
 
 
 declare var particlesJS: any;
@@ -16,7 +17,7 @@ declare var particlesJS: any;
 })
 export class PaqueteComponent implements OnInit {
 
-  constructor( private renderer: Renderer2) { }
+  constructor( private renderer: Renderer2, public _menu: MenuService) { }
 
   ngOnInit() {
     this.invokeParticles();
