@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from 'src/app/services/menu.service';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 // import { Element } from '@angular/compiler';
 
 @Component({
@@ -10,10 +11,12 @@ import { MenuService } from 'src/app/services/menu.service';
 export class NavbarComponent implements OnInit {
 
   scrollOn: boolean = false;
+  isSmall: boolean = true;
 
   menu: any = [];
 
-  constructor( private _menu: MenuService ) { }
+  constructor( private _menu: MenuService,
+                private _breackpoint: BreakpointService ) { }
 
 
   ngOnInit() {
@@ -23,8 +26,6 @@ export class NavbarComponent implements OnInit {
       this.scrollOn = event.srcElement.documentElement.scrollTop > 10 ? true : false;
 
       console.log(this.scrollOn);
-      
-
     }
 
 
@@ -35,6 +36,9 @@ export class NavbarComponent implements OnInit {
         console.log(menu);
         
       } );    
+
+
+    this._breackpoint.isSmall().subscribe( state => this.isSmall = state );
   }
 
 

@@ -13,7 +13,7 @@
 
 
                 <li *ngFor="let item of menu; let i=index" class="nav-item" [ngClass]=" item.isActive ? 'active' : ''">
-                    <a class="nav-link btn" (click)="goToElement(item.targetId)">{{ item.description }} </a>
+                    <a class="nav-link btn" [attr.data-toggle]="isSmall ? 'collapse': ''" data-target=".navbar-collapse" (click)="goToElement(item.targetId)">{{ item.description }} </a>
                 </li>
 
 <!-- 

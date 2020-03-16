@@ -23,13 +23,13 @@ export class MenuService {
     },
     {
       id: 3,
-      description: 'Sobre nosotros',
+      description: 'Quiénes somos',
       targetId: 'aboutus',
       isActive: false
     },
     {
       id: 4,
-      description: 'Contacto',
+      description: 'Contactanos',
       targetId: 'contacto',
       isActive: false
     },
