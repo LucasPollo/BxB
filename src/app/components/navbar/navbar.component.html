@@ -6,11 +6,12 @@
             <h1 class="display-4" style="font-weight: 800;">Bit x Bit</h1>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="toggleMenu()">
+            <!-- <span class="navbar-toggler-icon"></span> -->
 
 
-            <!-- <ng-container *ngTemplateOutlet="burgerMenu"></ng-container> -->
+            <ng-container *ngTemplateOutlet="burgerMenu"></ng-container>
             
 
 
@@ -37,25 +38,7 @@
         <span></span>
         <span></span>
         <span></span>
-      </div>
-      <div id="nav-icon2">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div id="nav-icon3">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div id="nav-icon4">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>    
+    </div>
+ 
 </ng-template>
 

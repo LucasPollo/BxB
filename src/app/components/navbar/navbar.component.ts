@@ -49,4 +49,25 @@ export class NavbarComponent implements OnInit {
     element.scrollIntoView({block: "start", behavior: "smooth"});
   }
 
+
+
+  toggleMenu() {
+
+    let menu: HTMLElement = document.getElementById('nav-icon1');
+    console.log(menu);
+    
+
+    if (menu.className.includes('open')) {
+
+      
+      menu.classList.remove('open');
+      console.log('remove:', menu.className);
+    } else {
+      menu.classList.add('open');
+      console.log('add:', menu.className);
+    }
+
+
+  }
+
 }
