@@ -17,7 +17,7 @@ export class MenuService {
     },
     {
       id: 2,
-      description: 'Promociones',
+      description: 'Productos',
       targetId: 'paquete',
       isActive: false
     },
