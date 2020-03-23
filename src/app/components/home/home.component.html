@@ -80,11 +80,16 @@
 
 
 <ng-template #large>
-    <div class="row" [style.height.px]='height'>
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
+    <div class="row" [style.height.px]='height' id="row1">
 
+        
+        
+        <div id="col1a"    class="col-md-6 text-vertical-center animated opacity-0">
+            
             <span class="text-right">
-                <h1>Elegante y moderno</h1>
+                <h1>Diseños elegantes y modernos</h1>
+                <span inViewport [inViewportOptions]="{ threshold: 0.0001 }" 
+                (inViewportAction)="fadeIn($event, 'col1')"></span>
                 
                 <p class="parrafo">
                     Queremos que esa idea en tu mente se pueda materializar 
@@ -94,7 +99,7 @@
                 
             </span>
         </div>
-        <div class="col-md-6 text-vertical-center animated " inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
+        <div id="col1b" class="col-md-6 text-vertical-center animated opacity-0 ">
 
             <img src="./assets/img/img8.png" class="img-fluid">
         </div>
@@ -103,14 +108,18 @@
 
     <div class="row" [style.height.px]='height'>
 
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
 
+        
+        <div id="col2a" class="col-md-6 text-vertical-center animated opacity-0">
+            
             <img src="./assets/img/img6.png" class="img-fluid">
         </div>
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
-
+        <div id="col2b" class="col-md-6 text-vertical-center animated opacity-0">
+            
             <span class="align-middle">
                 <h1>Resultados asegurados</h1>
+                <span inViewport [inViewportOptions]="{ threshold: 0.0001 }" 
+                (inViewportAction)="fadeIn($event, 'col2')"></span>        
                               
                 <p class="parrafo">
                     Con BxB tendras la garantía de que podras tener resultados positivos en 
@@ -122,16 +131,20 @@
     </div>
 
     <div class="row" [style.height.px]='height'>
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInLeft')">
+
+        
+        <div id="col3a" class="col-md-6 text-vertical-center animated opacity-0">
             <span class="text-right">
                 <h1>Diseño adaptable</h1>
+                <span inViewport [inViewportOptions]="{ threshold: 0.0001 }" 
+                (inViewportAction)="fadeIn($event, 'col3')"></span>
                 
                 <p class="mt-2" class="parrafo">
                     Con nosotros tienes la confianza de que tus ideas puedan ser vistas por cualquier persona en cualquier dispositivo electronico.                                                                       
                 </p>
             </span>
         </div>
-        <div class="col-md-6 text-vertical-center animated" inViewport [inViewportOptions]="{ threshold: 0.0001 }" (inViewportAction)="fadeIn($event, 'fadeInRight')">
+        <div id="col3b" class="col-md-6 text-vertical-center animated opacity-0">
             <img src="./assets/img/img9.png" class="img-fluid">
         </div>
     </div>
