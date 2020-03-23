@@ -44,6 +44,8 @@ export class NavbarComponent implements OnInit {
 
   goToElement( elementId ) {
 
+
+    this.toggleMenu(); 
     let element: HTMLElement = document.getElementById( elementId );
 
     element.scrollIntoView({block: "start", behavior: "smooth"});
