@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, HostListener } from '@angular/core';
 
 import Typed from 'typed.js';
 
@@ -34,70 +34,70 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    setTimeout(() => {
-      this.cargarTyped();
-      this.invokeParticles();
-    }, 1500);
+    // setTimeout(() => {
+    //   this.cargarTyped();
+    //   this.invokeParticles();
+    // }, 1500);
 
 
 
 
     this._breakpoint.isSmall().subscribe( state => this.isSmall = state );
-    
+
     console.log('Alto:', window.innerHeight);
     console.log('Alto2:', window.outerHeight);
     console.log(this.height);
     this.height =  window.innerHeight - 85;
-  
+
 
   }
 
 
-  public invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, function() {});
-  }
+  // public invokeParticles(): void {
+  //   particlesJS('particles-js', ParticlesConfig, function() {});
+  // }
 
 
 
 
-  cargarTyped() {
+  // cargarTyped() {
 
-    let typed = new Typed('.typed', {
-      strings: [
-          '<i class="mascota">Páginas Web</i>',
-          '<i class="mascota">Aplicaciónes móviles</i>',
-          '<i class="mascota">Renovación estética</i>',
-          '<i class="mascota">innovación</i>',
-      ],
-      // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
-      typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
-      startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
-      backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
-      smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
-      shuffle: false, // Alterar el orden en el que escribe las palabras.
-      backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
-      loop: true, // Repetir el array de strings
-      loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
-      showCursor: true, // Mostrar cursor palpitanto
-      cursorChar: '|', // Caracter para el cursor
-      contentType: 'html', // 'html' o 'null' para texto sin formato
+  //   let typed = new Typed('.typed', {
+  //     strings: [
+  //         '<i class="mascota">Páginas Web</i>',
+  //         '<i class="mascota">Aplicaciónes móviles</i>',
+  //         '<i class="mascota">Renovación estética</i>',
+  //         '<i class="mascota">innovación</i>',
+  //     ],
+  //     // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+  //     typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+  //     startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+  //     backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+  //     smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+  //     shuffle: false, // Alterar el orden en el que escribe las palabras.
+  //     backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+  //     loop: true, // Repetir el array de strings
+  //     loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+  //     showCursor: true, // Mostrar cursor palpitanto
+  //     cursorChar: '|', // Caracter para el cursor
+  //     contentType: 'html', // 'html' o 'null' para texto sin formato
 
-    });
-  }
+  //   });
+  // }
 
-  mostrarinfo(form: NgForm) {
+  // mostrarinfo(form: NgForm) {
 
-    Swal.fire({
-      icon: 'info',
-      title: 'SweetAlert',
-      text: 'Que te parece?',
-      imageUrl: './assets/img/img5.png',
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: 'Custom image'
-    });
+  //   Swal.fire({
+  //     icon: 'info',
+  //     title: 'SweetAlert',
+  //     text: 'Que te parece?',
+  //     imageUrl: './assets/img/img5.png',
+  //     imageWidth: 400,
+  //     imageHeight: 200,
+  //     imageAlt: 'Custom image'
+  //   });
 
-  }
+  // }
 
 
   /**
@@ -105,16 +105,27 @@ export class HomeComponent implements OnInit {
    * @param param0 evento que permite determinar si el elemento es visible o no
    * @param fadeIn animación que se agregará al elemento
    */
-  fadeIn({ target, visible }: { target: Element; visible: boolean} , fadeIn:string): void {
+   fadeIn({ target, visible }: { target: Element; visible: boolean} , id:string): void {
 
+    let col1a = document.getElementById(id+'a');
+    let col1b = document.getElementById(id+'b');
     // si es visible y aun no ha agregado la clase de la animacion, se la agrego
-    if (visible && (target.className.indexOf(fadeIn) === -1 ) ) {
+    if (visible && (col1a.className.indexOf('fadeInLeft') === -1 ) ) {
 
-      target.classList.add(fadeIn);
-
+      console.log(col1a);
+      
+      
+      col1a.classList.add('fadeInLeft');
+      col1b.classList.add('fadeInRight');
+      
     }
-
   }
+  
+  // @HostListener('window:scroll', [])
+  // onIntersection( event ) {
+  //   let elm = document.getElementById('row1');
+  //   let bounding = elm.getBoundingClientRect();
+  //  }
 
 }
 

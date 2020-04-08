@@ -10,7 +10,7 @@ import { BreakpointService } from 'src/app/services/breakpoint.service';
 })
 export class NavbarComponent implements OnInit {
 
-  scrollOn: boolean = false;
+  scrollOn: boolean = true;
   isSmall: boolean = true;
 
   menu: any = [];
@@ -34,8 +34,8 @@ export class NavbarComponent implements OnInit {
         this.menu = menu;
 
         console.log(menu);
-        
-      } );    
+
+      } );
 
 
     this._breackpoint.isSmall().subscribe( state => this.isSmall = state );
@@ -44,9 +44,31 @@ export class NavbarComponent implements OnInit {
 
   goToElement( elementId ) {
 
+
+    this.toggleMenu();
     let element: HTMLElement = document.getElementById( elementId );
 
     element.scrollIntoView({block: "start", behavior: "smooth"});
+  }
+
+
+
+
+
+
+   toggleMenu() {
+
+    let menu: HTMLElement = document.getElementById('nav-icon1');
+    console.log(menu);
+
+
+    if (menu.className.includes('open')) {
+      menu.classList.remove('open');
+      console.log('remove:', menu.className);
+    } else {
+      menu.classList.add('open');
+      console.log('add:', menu.className);
+    }
   }
 
 }
